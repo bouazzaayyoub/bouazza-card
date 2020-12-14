@@ -2,10 +2,7 @@
   "name": "ayyoubouazza",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "bin": {
-    "ayyoubouazza": "./index.js"
-  },
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +14,19 @@
     "clear": "^0.1.0",
     "inquirer": "^7.3.3",
     "open": "^7.3.0"
-  }
+  },
+  "bin": {
+    "ayyoubouazza": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bouazzaayyoub/bouazza-card.git"
+  },
+  "keywords": [
+    "NPM",
+    "Business",
+    "Card",
+    "Node",
+    "JavaScript"
+  ]
 }

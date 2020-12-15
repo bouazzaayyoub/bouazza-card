@@ -4,7 +4,8 @@
   "description": "",
   "main": "./index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "bouazza ayyoub",
   "license": "ISC",
@@ -12,9 +13,11 @@
     "boxen": "^4.2.0",
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
+    "g": "^2.0.1",
     "inquirer": "^7.3.3",
     "open": "^7.3.0"
   },
+  "preferGlobal": "true",
   "bin": {
     "ayyoubouazza": "./index.js"
   },

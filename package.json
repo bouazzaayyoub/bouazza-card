@@ -9,12 +9,14 @@
   },
   "author": "bouazza ayyoub",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "boxen": "^4.2.0",
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
     "inquirer": "^7.3.3",
-    "open": "^7.3.0"
+    "open": "^7.3.0",
+    "terminal-image": "^2.0.0"
   },
   "preferGlobal": "true",
   "bin": {

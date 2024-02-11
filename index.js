@@ -12,7 +12,7 @@ import open from "open";
 clear();
 
 const colors = {
-  primary: "#a95fed",
+  primary: "#0386c6",
 };
 
 const data = {
@@ -21,6 +21,7 @@ const data = {
     "Excited to Build Software Products and Help Others Learn Computer Science.",
   linkedIn: "https://www.linkedin.com/in/bouazza-ayyoub",
   twitter: "https://twitter.com/AyyoubBouazza",
+  website: "https://www.abouazza.com",
   github: "https://github.com/bouazzaayyoub",
   medium: "https://medium.com/@bouazzaayyoub",
   whatIamDoing:
@@ -40,6 +41,7 @@ const me = boxen(
     `${chalk.white.bold("Medium:")}    ${chalk.underline(data.medium)}`,
     `${chalk.white.bold("Github:")}    ${chalk.underline(data.github)}`,
     `${chalk.white.bold("Twitter:")}   ${chalk.underline(data.twitter)}`,
+    `${chalk.white.bold("Website:")}   ${chalk.underline(data.website)}`,
     ``,
     `${chalk.hex(colors.primary).bold("About me:")}`,
     `${chalk.italic(data.whatIamDoing)}`,
@@ -79,8 +81,9 @@ const questions = [
       {
         name: `Send me an ${chalk.green.bold("email")}?`,
         value: () => {
-          open("bouazza6ayyoub@gmail.com");
-          console.log("\nDone, see you soon.\n");
+          open(data.website).then(() => {
+            console.log("\nSee you soon.\n");
+          });
         },
       },
       {
